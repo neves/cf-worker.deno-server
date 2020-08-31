@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std/http/server.ts"
-const PORT = 8000
+const PORT = 8787
 
 class FetchEventDeno extends CustomEvent {
   constructor(type, init, responder) {
@@ -38,8 +38,12 @@ async function run() {
   const url = `http://localhost:${PORT}`
   console.log(url)
   for await (const req of server) {
+    // Uint8Array: new TextDecoder().decode(body)
+    const body = await Deno.readAll(req.body)
     const request = new Request(url + req.url, {
+      method: req.method,
       headers: req.headers,
+      body,
     })
 
     const initEvent = { request }
