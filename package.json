@@ -1,0 +1,8 @@
+{
+  "name": "@cf-worker/deno-server",
+  "version": "0.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.0.0"
+  }
+}
