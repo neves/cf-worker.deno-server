@@ -1,0 +1,9 @@
+{
+  "name": "template",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "wrangler": "CF_API_TOKEN=Nh5cKJ-q1wHaZ5Njboxor98F8rgxtwFXsskiwvsC wrangler"
+  }
+}

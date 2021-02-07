@@ -1,0 +1,4 @@
+name = "template"
+type = "javascript"
+account_id = "80e14c76cc9b0f2be7c809b5d790343a"
+workers_dev = true
